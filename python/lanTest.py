@@ -51,12 +51,12 @@ Label(main, text="IP Addr").grid(row=2,column=1, sticky='e')
 Entry(main, width=15, textvariable=host).grid(row=2,column=2, sticky='w')
 Label(main, text="Port").grid(row=3,column=1, sticky='e')
 Entry(main, width=6, textvariable=port).grid(row=3,column=2, sticky='w')
-Label(main, textvariable=lbl, width=15, background='black', foreground='white', font=("courier bold", 30)).grid(row=1, column=1, columnspan=3)
+Label(main, textvariable=lbl, width=40, background='black', foreground='white', font=("courier bold", 20)).grid(row=1, column=1, columnspan=3)
 Button(main, text="get ID", command=getID, width = 12).grid(row=4,column=1)
 Button(main, text="volt dc", command=voltdc, width = 12).grid(row=4,column=2)
 Button(main, text="run last", command=lCmd, width = 12).grid(row=5,column=1)
 Button(main, text="plot", command=plot, width=12).grid(row=5,column=2)
 
 
-
+main.mainloop()
 
